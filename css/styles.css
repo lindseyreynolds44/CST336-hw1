@@ -1,0 +1,57 @@
+
+/* --- Styling for whole site --- */
+
+header, main, nav, footer {
+    text-align: center;
+    font-family: 'Open Sans Condensed', cursive;
+}
+
+#title_container {
+    position: relative;
+    text-align: center;
+}
+
+/* Title on each page */
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    font-size: 4.5em;
+    margin-bottom: 0px;
+    color: white;
+}
+
+/* Background and text of each page */
+body {
+    background-color:#D9D9D9; /* light gray */
+    color:black;
+}
+
+/* Menu bar at the top of each page */
+nav a { /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none;   /* removes underline */
+    color: black;            /* default links are blue */
+}
+
+/* Alter menu links for hover and current page */
+nav a:hover, .current { /* pseudo class */
+    border-bottom:2px #06355E solid; /* blue */
+    font-size: 2em;
+    transition: .9s; 
+    font-weight: bold;
+}
+
+#footer_text {
+    padding-top:40px;
+    font-size: .8em;
+    color: black;
+}
+
+#footer_content {
+    display: flex; /* format to have elements side by side */
+    justify-content: center;
+}
