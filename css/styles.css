@@ -44,7 +44,6 @@ nav a { /* links within "nav" container */
 
 /* Alter menu links for hover and current page */
 nav a:hover, .current { /* pseudo class */
-    border-bottom:2px white solid; /* blue */
     font-size: 1.7em;
     font-weight: bold;
     background-color: #113758; /* Navy blue */
