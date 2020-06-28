@@ -25,13 +25,11 @@ h1 {
 body {
     background-color:#D9DADC; /* light gray */
     color:black;
-    margin:0;
-    padding:0;
-    height: 100%;
+    margin: auto; /* Makes header background color flush with edges */
 }
 
 nav {
-    background-color: #1F527E;
+    background-color: #1F527E; /* Blue */
     padding: 10px;
 }
 
@@ -49,6 +47,8 @@ nav a:hover, .current { /* pseudo class */
     border-bottom:2px white solid; /* blue */
     font-size: 1.7em;
     font-weight: bold;
+    background-color: #113758; /* Navy blue */
+    padding: 10px;
 }
 
 .content_title {
@@ -65,15 +65,13 @@ nav a:hover, .current { /* pseudo class */
 
 .home_content {
     display: flex;
-    justify-content: center;
     margin: 30px;
 }
 
 .home_text {
     font-size:1.2em;
     text-align: left;
-    padding-left:20px;
-    padding-right:20px;
+    margin:0 auto;
 }
 
 .list_title {
