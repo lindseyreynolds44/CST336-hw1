@@ -6,9 +6,21 @@ header, nav, footer {
     font-family: 'Open Sans Condensed', cursive;
 }
 
+header {
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:5;
+    background-image: url("../img/sunrise.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 main {
     font-family: 'Open Sans Condensed', cursive;
     width: 1000px;
+    position: relative;
+    top: 250px;
     margin: auto; /* Makes all main content centered */
 }
 
@@ -16,25 +28,26 @@ main {
 h1 {
     font-size: 3em;
     color: white;
-    background-color: #8A8F92; /* dark gray */
-    padding: 20px;
     margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
 /* Background and text of each page */
 body {
-    background-color:#D9DADC; /* light gray */
     color:black;
+    background-color:#D9DADC; /* light gray */
     margin: auto; /* Makes header background color flush with edges */
 }
 
+/* Menu bar at the top of each page */
 nav {
     background-color: #1F527E; /* Blue */
     padding: 10px;
 }
 
-/* Menu bar at the top of each page */
-nav a { /* links within "nav" container */
+/* Links within "nav" container */
+nav a { 
     padding:25px;
     padding-bottom:4px;
     font-size: 1.5em;
@@ -50,49 +63,29 @@ nav a:hover, .current { /* pseudo class */
     padding: 10px;
 }
 
-.content_title {
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
+/* The main content of each page */
 .content {
     font-size: 1.2em;
     display: flex;
-    margin: 30px;
-    padding: 20px;
+    margin: 20px 20px;
 }
 
-.home_content {
-    display: flex;
-    margin: 30px;
+/* Make image and text align on each page */
+figure {
+    padding-top: 10px;
 }
 
-.home_text {
-    font-size:1.2em;
-    text-align: left;
-    margin:0 auto;
-}
+/* --- Style for index.html --- */
 
-.list_title {
-    font-style: italic;
-    font-weight: bold;
-}
-
+/* Emphasized content on the list in index.html */
 .list_item {
     font-family: Lobster, cursive;
 }
 
-.quote_text {
-    font-style: italic;
-}
 
-.reference_title {
-    font-size: 1.8em;
-    font-weight: bold;
-    text-align: center;
-}
+/* --- Style for references.html --- */
 
-.reference_content {
+.reference_content, .reference_content h2 {
     margin: 20px;
     text-align: center;
 }
@@ -109,8 +102,23 @@ nav a:hover, .current { /* pseudo class */
     color: black;
 }
 
+/* --- Style for footer --- */
+
 footer {
+    margin: 40px;
+    position: relative;
+    top:250px;
+}
+
+.footer_content {
     font-size: .9em;
     color: black;
-    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content figure {
+    margin: 0 20px;
+    padding: 0;
 }
