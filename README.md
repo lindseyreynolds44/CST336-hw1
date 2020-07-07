@@ -4,5 +4,4 @@
 * Create a simple website about a tech related topic
 
 ## URL:
-* https://lire20-hw1.herokuapp.com/index.html - automatic!
-[Website](https://lire20-hw1.herokuapp.com/index.html)
+* [Website Link](https://lire20-hw1.herokuapp.com/index.html)
